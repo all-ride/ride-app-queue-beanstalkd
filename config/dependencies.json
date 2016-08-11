@@ -1,0 +1,34 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "Beanstalk\\Client",
+            "factory": {
+                "interface": "ride\\library\\queue\\BeanstalkdFactory",
+                "method": "createClient",
+                "arguments": [
+                    {
+                        "name": "host",
+                        "type": "parameter",
+                        "properties": {
+                            "key": "beanstalkd.host",
+                            "default": "localhost"
+                        }
+                    },
+                    {
+                        "name": "port",
+                        "type": "parameter",
+                        "properties": {
+                            "key": "beanstalkd.port",
+                            "default": "11300"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "interfaces": "ride\\library\\queue\\QueueManager",
+            "class": "ride\\application\\queue\\BeanstalkdQueueManager",
+            "id": "beanstalkd"
+        }
+    ]
+}
