@@ -1,0 +1,2 @@
+beanstalkd.host         Hostname or IP address of the Beanstalkd server
+beanstalkd.port         Port of the Beanstalkd server

@@ -1,0 +1,22 @@
+{
+    "name": "ride/app-queue-beanstalkd",
+    "description": "Beanstalkd integration for the Ride queue.",
+    "license": "MIT",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Joris Vandeweerd",
+            "email": "joris@statik.be"
+        }
+    ],
+    "require": {
+        "ride/app": ">=0.8.1",
+        "ride/lib-queue-beanstalkd": ">=0.1.0",
+        "davidpersson/beanstalk": "^2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "ride\\application\\queue\\BeanstalkdQueueManager": ["src/"]
+        }
+    }
+}
