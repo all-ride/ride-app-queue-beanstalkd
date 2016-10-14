@@ -10,6 +10,7 @@ Integration of the Beanstalkd library in the Ride application.
 ## Related Modules 
 
 - [ride/app](https://github.com/all-ride/ride-app)
+- [ride/cli-queue](https://github.com/all-ride/ride-cli-queue)
 - [ride/lib-queue](https://github.com/all-ride/ride-lib-queue)
 - [ride/lib-queue-beanstalkd](https://github.com/all-ride/ride-lib-queue-beanstalkd)
 
